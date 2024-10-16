@@ -1294,16 +1294,24 @@ carousel &&
     divIsVisible = false,
     jQuery(function (t) {
         t(document).on("click", ".sppb-magnific-popup", function (e) {
+            console.log(e.target);
             e.preventDefault();
             if (!divIsVisible) {
                 $("#video").css("visibility", "visible"); // Show the div
                 divIsVisible = true;
                 video = t(this).attr("href");
-            } else {
-                $("#video").css("visibility", "hidden"); // Hide the div
+            } else if (!$(e.target).is("video")) {
+                $("#video").css("visibility", "hidden");
                 divIsVisible = false;
-            }            
+            }
         });
+        t(document).on('click', '.video-div', function (e) {
+            e.preventDefault();
+            if (divIsVisible) {
+                $("#video").css("visibility", "hidden");
+                divIsVisible = false;
+            }
+        }); 
     }),
     jQuery(function (t) {
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)

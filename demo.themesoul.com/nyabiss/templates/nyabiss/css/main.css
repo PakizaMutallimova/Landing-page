@@ -85,18 +85,16 @@
 }
 
 .video-div{
-    height: 80%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     margin: auto;
-    top: 80px;
-    left: 20%;
-    right: 20%;
-    background-color: red;
-    z-index: 100 ;
+    top: 60px;
+    left: 0;
+    z-index: 100;
     visibility: hidden;
 }
 
@@ -104,4 +102,12 @@
     width: 100%;
     height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.video-section video{
+    width: 60%;
+    height: 90%;
 }
