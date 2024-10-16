@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 05 Oct 2024 15:40:22 at https://demo.themesoul.com/nyabiss/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://demo.themesoul.com/nyabiss/ -O1 "C:\My Web Sites\https___demo.themesoul.com_nyabiss_" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:41:16	Error: 	"Not Found" (404) at link https://demo.themesoul.com/nyabiss/templates/nyabiss/images/menu-bg.jpg (from https://demo.themesoul.com/nyabiss/templates/nyabiss/css/template.css)
+15:41:16	Error: 	"Not Found" (404) at link https://demo.themesoul.com/nyabiss/images/portfolio/portfolio-1.jpg (from https://demo.themesoul.com/nyabiss/index.php/pages/gallery)
+15:41:16	Error: 	"Not Found" (404) at link https://demo.themesoul.com/nyabiss/images/portfolio/portfolio-2.jpg (from https://demo.themesoul.com/nyabiss/index.php/pages/gallery)
+15:41:17	Error: 	"Not Found" (404) at link https://demo.themesoul.com/nyabiss/images/portfolio/portfolio-3.jpg (from https://demo.themesoul.com/nyabiss/index.php/pages/gallery)
+15:41:17	Error: 	"Not Found" (404) at link https://demo.themesoul.com/nyabiss/images/portfolio/portfolio-4.jpg (from https://demo.themesoul.com/nyabiss/index.php/pages/gallery)
+15:41:25	Error: 	"Not Found" (404) at link https://demo.themesoul.com/nyabiss/wa.me/6282244463482 (from https://demo.themesoul.com/nyabiss/index.php/our-menu)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 3 seconds : 183 links scanned, 176 files written (10662091 bytes overall) [5601694 bytes received at 88915 bytes/sec], 6797090 bytes transferred using HTTP compression in 136 files, ratio 23%, 91.5 requests per connection
+(6 errors, 0 warnings, 0 messages)

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Home</title>
+		<description><![CDATA[]]></description>
+		<link>https://demo.themesoul.com/nyabiss/index.php/component/tags/tag/5</link>
+		<lastBuildDate>Sat, 05 Oct 2024 11:41:22 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="https://demo.themesoul.com/nyabiss/index.php/component/tags/tag/roasting?format=feed&amp;type=rss"/>
+		<language>en-gb</language>
+		<item>
+			<title>Basics to Brewing Cafe Quality Coffee At Home</title>
+			<link>https://demo.themesoul.com/nyabiss/index.php/blog/detail-article</link>
+			<guid isPermaLink="true">https://demo.themesoul.com/nyabiss/index.php/blog/detail-article</guid>
+			<description><![CDATA[<p>The first step of this assessment will be to collectively create an exhaustive list of processes needing analysis and all systems in use Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+]]></description>
+			<category>Basics to Brewing Cafe Quality Coffee At Home</category>
+			<pubDate>Mon, 17 Aug 2020 17:54:09 +0000</pubDate>
+		</item>
+		<item>
+			<title>How Much Caffeine is in a Coffee Bean</title>
+			<link>https://demo.themesoul.com/nyabiss/index.php/pages/20-how-much-caffeine-is-in-a-coffee-bean</link>
+			<guid isPermaLink="true">https://demo.themesoul.com/nyabiss/index.php/pages/20-how-much-caffeine-is-in-a-coffee-bean</guid>
+			<description><![CDATA[<p>The first step of this assessment will be to collectively create an exhaustive list of processes needing analysis and all systems in use Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+]]></description>
+			<category>How Much Caffeine is in a Coffee Bean</category>
+			<pubDate>Mon, 17 Aug 2020 17:35:30 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
