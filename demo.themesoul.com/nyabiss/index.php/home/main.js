@@ -5,3 +5,14 @@ window.addEventListener('click', (e) => {
         video.play();
     }
 });
+
+
+
+const socialsData = {
+    linkedin: "test",
+    instagram: "",
+    youtube: ""
+}
+
+console.log(socialsData[1]);
+const socialIcons = document.querySelector('.social-icons');

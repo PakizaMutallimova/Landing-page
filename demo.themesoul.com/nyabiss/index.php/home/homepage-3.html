@@ -10,6 +10,10 @@
         <meta name="generator" content="Helix Ultimate - The Most Popular Joomla! Template Framework." />
         <title>Homepage 3</title>
         <link rel="stylesheet" href="../../templates/nyabiss/css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css
+            " rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
         <link href="../../images/logo-sticky.png" rel="icon" type="image/vnd.microsoft.icon" />
         <link href="../pages/smart-search-resultf758?format=opensearch" rel="search" title="OpenSearch Nyabis" type="application/opensearchdescription+xml" />
         <link href="../../media/vendor/awesomplete/css/awesomplete75d0.css?1.1.5" rel="stylesheet" />
@@ -2036,25 +2040,25 @@
                 }
             }
             #sppb-addon-_rFQizaq4sB3T27nUeL1N {
-                padding-top: 40px;
+                padding-top: 80px;
                 padding-right: 20px;
-                padding-bottom: 0px;
+                padding-bottom: 90px;
                 padding-left: 80px;
             }
             @media (max-width: 1199.98px) {
                 #sppb-addon-_rFQizaq4sB3T27nUeL1N {
-                    padding-top: 0px;
+                    padding-top: 30px;
                     padding-right: 0px;
-                    padding-bottom: 0px;
+                    padding-bottom: 70px;
                     padding-left: 40px;
                 }
             }
             @media (max-width: 991.98px) {
                 #sppb-addon-_rFQizaq4sB3T27nUeL1N {
-                    padding-top: 0px;
-                    padding-right: 0px;
+                    padding-top: 20px;
+                    padding-right: 02px;
                     padding-bottom: 80px;
-                    padding-left: 0px;
+                    padding-left: 40px;
                 }
             }
             #sppb-addon-_rFQizaq4sB3T27nUeL1N .sppb-modal-selector span > i {
@@ -2420,7 +2424,7 @@
             .sp-page-builder .page-content #section-id-b2z-6hlRF-pTxeYYVyDT2 {
                 padding-top: 50px;
                 padding-right: 0px;
-                padding-bottom: 120px;
+                padding-bottom: 10px;
                 padding-left: 0px;
                 margin-top: 0px;
                 margin-right: 0px;
@@ -2611,9 +2615,9 @@
                 box-shadow: 0px 0px 0px 0px #ffffff;
             }
             .sp-page-builder .page-content #section-id-J3hX3OFoaz-pmmZsuJniv {
-                padding-top: 140px;
+                padding-top: 100px;
                 padding-right: 0px;
-                padding-bottom: 140px;
+                padding-bottom: 40px;
                 padding-left: 0px;
                 margin-top: 0px;
                 margin-right: 0px;
@@ -3396,7 +3400,10 @@
                 "csrf.token": "cfe2a682a02d11d47f0edfa044714504"
             }
         </script>
-        
+        <script type="module">
+            import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.1.14/+esm'
+        </script>
+        <script src="./swiper.js" defer></script>
         <script src="../../media/system/js/core.min87f9.js?83f2c9"></script>
         <script src="../../media/vendor/jquery/js/jquery.min8a0c.js?3.7.1"></script>
         <script src="../../media/legacy/js/jquery-noconflict.min1fec.js?504da4"></script>
@@ -4823,28 +4830,89 @@
                                                             <div class="sppb-column-addons">
                                                                 <div id="sppb-addon-wrapper-VFc0GSzzKqOsyf8v6A-Dj" class="sppb-addon-wrapper addon-root-testimonial">
                                                                     <div id="sppb-addon-VFc0GSzzKqOsyf8v6A-Dj" class="clearfix">
-                                                                        <div class="sppb-addon sppb-addon-testimonial">
-                                                                            <div class="sppb-addon-content">
-                                                                                <span class="fa fa-quote-left" aria-hidden="true"></span>
-                                                                                <div class="sppb-addon-testimonial-review">
-                                                                                    "Just stopped here for <em>a</em> cup of coffee and I was extremely surprised with <em>the</em> environment! Very good place, good food and good coffee!"
-                                                                                </div>
-                                                                                <div class="sppb-addon-testimonial-footer">
-                                                                                    <div class="sppb-addon-testimonial-content-wrap">
-                                                                                        <img
-                                                                                            src="../../components/com_sppagebuilder/assets/images/lazyloading-placeholder.svg"
-                                                                                            class="sppb-avatar-circle sppb-addon-testimonial-avatar sppb-element-lazy"
-                                                                                            alt="John Alkatiri"
-                                                                                            data-large="https://sppagebuilder.com/sections/images/2017/10/25/team03.jpg"
-                                                                                            loading="lazy"
-                                                                                        />
-                                                                                        <span>
-                                                                                            <span class="sppb-addon-testimonial-client">John Alkatiri</span><br />
-                                                                                            <span class="sppb-addon-testimonial-client-url">CEO, Jabejo Jaya Abadi</span>
-                                                                                        </span>
+                                                                        <div class="container sppb-addon-testimonial">
+                                                                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                                                                <div class="carousel-inner">
+                                                                                  <div class="carousel-item active" data-bs-interval="4000">
+                                                                                    <div class="sppb-addon-content w-100">
+                                                                                        <span class="fa fa-quote-left" aria-hidden="true"></span>
+                                                                                        <div class="sppb-addon-testimonial-review">
+                                                                                            "We had been contemplating loyalty ideas for a while. MiLoy's offers were exactly what we needed and came at the right time"
+                                                                                        </div>
+                                                                                        <div class="sppb-addon-testimonial-footer">
+                                                                                            <div class="sppb-addon-testimonial-content-wrap">
+                                                                                                <img
+                                                                                                    src="../../components/com_sppagebuilder/assets/images/lazyloading-placeholder.svg"
+                                                                                                    class="sppb-avatar-circle sppb-addon-testimonial-avatar sppb-element-lazy"
+                                                                                                    alt="John Alkatiri"
+                                                                                                    data-large="https://sppagebuilder.com/sections/images/2017/10/25/team03.jpg"
+                                                                                                    loading="lazy"
+                                                                                                />
+                                                                                                <span>
+                                                                                                    <span class="sppb-addon-testimonial-client">Kanan Nasirzada</span><br />
+                                                                                                    <span class="sppb-addon-testimonial-client-url">Operations Director, Unstops</span>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
+                                                                                  </div>
+                                                                                  <div class="carousel-item" data-bs-interval="2000">
+                                                                                    <div class="sppb-addon-content w-100">
+                                                                                        <span class="fa fa-quote-left" aria-hidden="true"></span>
+                                                                                        <div class="sppb-addon-testimonial-review">
+                                                                                            "The loyalty system presented by MiLoy is very intriguing for us"
+                                                                                        </div>
+                                                                                        <div class="sppb-addon-testimonial-footer">
+                                                                                            <div class="sppb-addon-testimonial-content-wrap">
+                                                                                                <img
+                                                                                                    src="../../components/com_sppagebuilder/assets/images/lazyloading-placeholder.svg"
+                                                                                                    class="sppb-avatar-circle sppb-addon-testimonial-avatar sppb-element-lazy"
+                                                                                                    alt="John Alkatiri"
+                                                                                                    data-large="https://sppagebuilder.com/sections/images/2017/10/25/team03.jpg"
+                                                                                                    loading="lazy"
+                                                                                                />
+                                                                                                <span>
+                                                                                                    <span class="sppb-addon-testimonial-client">Rovshan Gasimov</span><br />
+                                                                                                    <span class="sppb-addon-testimonial-client-url">Coffee shop owner</span>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  <div class="carousel-item">
+                                                                                    <div class="sppb-addon-content w-100">
+                                                                                        <span class="fa fa-quote-left" aria-hidden="true"></span>
+                                                                                        <div class="sppb-addon-testimonial-review">
+                                                                                            "I was very pleased to learn that I don't need to carry separate cards for each café I visit!"
+                                                                                        </div>
+                                                                                        <div class="sppb-addon-testimonial-footer">
+                                                                                            <div class="sppb-addon-testimonial-content-wrap">
+                                                                                                <img
+                                                                                                    src="../../components/com_sppagebuilder/assets/images/lazyloading-placeholder.svg"
+                                                                                                    class="sppb-avatar-circle sppb-addon-testimonial-avatar sppb-element-lazy"
+                                                                                                    alt="John Alkatiri"
+                                                                                                    data-large="https://sppagebuilder.com/sections/images/2017/10/25/team03.jpg"
+                                                                                                    loading="lazy"
+                                                                                                />
+                                                                                                <span>
+                                                                                                    <span class="sppb-addon-testimonial-client">Sanubar</span><br />
+                                                                                                    <span class="sppb-addon-testimonial-client-url">Daily User</span>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                  </div>
                                                                                 </div>
+                                                                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                                  <span style="color: red;" class="visually-hidden"><i class="fas fa-chevron-up"></i></span>
+                                                                                </button>
+                                                                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                                  <span class="visually-hidden">Next</span>
+                                                                                </button>
                                                                             </div>
+                                                                            
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -4862,7 +4930,7 @@
                                                             <div class="sppb-column-addons">
                                                                 <div id="sppb-addon-wrapper-l5LZFzmQNXAG9hzTbdRkI" class="sppb-addon-wrapper addon-root-heading">
                                                                     <div id="sppb-addon-l5LZFzmQNXAG9hzTbdRkI" class="clearfix">
-                                                                        <div class="sppb-addon sppb-addon-header"><h3 class="sppb-addon-title">Latest Blog</h3></div>
+                                                                        <!-- <div class="sppb-addon sppb-addon-header"><h3 class="sppb-addon-title">Latest Blog</h3></div> -->
                                                                     </div>
                                                                 </div>
                                                                 <div id="sppb-addon-wrapper-_YEUo6Bim81CHKT3Fkuzm" class="sppb-addon-wrapper addon-root-text-block">
@@ -5353,7 +5421,7 @@
                                                             <div class="sppb-row-container">
                                                                 <div class="sppb-row">
                                                                     <div class="sppb-row-column" id="column-wrap-id-1665526281415">
-                                                                        <div id="column-id-1665526281415" class="sppb-column">
+                                                                        <!-- <div id="column-id-1665526281415" class="sppb-column">
                                                                             <div class="sppb-column-addons">
                                                                                 <div id="sppb-addon-wrapper-1604139623109" class="sppb-addon-wrapper addon-root-text-block">
                                                                                     <div id="sppb-addon-1604139623109" class="clearfix">
@@ -5630,7 +5698,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
+                                                                        </div> -->
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -5814,7 +5882,7 @@
                                 </div>
                                 <div id="sp-footer2" class="col-lg-12 col-xl-12">
                                     <div class="sp-column">
-                                        <span class="sp-copyright">© 2024 nyabiss.com. All right reserved</span><a href="#" class="sp-scroll-up" aria-label="Scroll Up"><span class="fa fa-chevron-up" aria-hidden="true"></span></a>
+                                        <span class="sp-copyright">© 2024 Miloy</span><a href="#" class="sp-scroll-up" aria-label="Scroll Up"><span class="fa fa-chevron-up" aria-hidden="true"></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -5882,5 +5950,7 @@
         </div>
     </body>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <!-- Mirrored from demo.themesoul.com/nyabiss/index.php/home/homepage-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Oct 2024 11:40:55 GMT -->
 </html>
