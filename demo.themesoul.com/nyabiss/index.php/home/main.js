@@ -12,6 +12,16 @@ const socialsData = {
     youtube: ""
 }
 
+
+
+
+const data = {
+    "fullname": "string",
+    "companyName": "string",
+    "email": "string",
+    "phone": "string"
+}
+
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const number = document.getElementById('number');
@@ -21,3 +31,6 @@ const btnSubmit = document.querySelector('.btn-submit')
 btnSubmit.addEventListener('click', () => {
     console.log(name.value, email.value, number.value, company.value);
 })
+
+
+
