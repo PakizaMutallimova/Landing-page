@@ -120,6 +120,11 @@
 }
 
 
-.carousel-control-prev{
-    
+.btn-submit{
+    background-color: #87FF8C !important;
+}
+
+
+#sp-footer1 .social-icons li a{
+    padding: 10px !important;
 }

@@ -11,3 +11,13 @@ const socialsData = {
     instagram: "",
     youtube: ""
 }
+
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const number = document.getElementById('number');
+const company = document.getElementById('company');
+const btnSubmit = document.querySelector('.btn-submit')
+
+btnSubmit.addEventListener('click', () => {
+    console.log(name.value, email.value, number.value, company.value);
+})
