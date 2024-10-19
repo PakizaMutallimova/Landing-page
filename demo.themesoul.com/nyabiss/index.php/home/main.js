@@ -6,13 +6,8 @@ window.addEventListener('click', (e) => {
     }
 });
 
-
-
 const socialsData = {
     linkedin: "test",
     instagram: "",
     youtube: ""
 }
-
-console.log(socialsData[1]);
-const socialIcons = document.querySelector('.social-icons');
