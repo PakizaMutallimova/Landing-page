@@ -1427,7 +1427,7 @@ body.view-article.remove-container .body-innerwrapper > .sp-main-body > .contain
 }
 #sp-bottom {
     padding: 0 0 260px;
-    background: #0b0706 url("../images/bg-footer.jpg") 50% 0 no-repeat;
+    background: #000000 url("../../../images/background/footer.jpg") 60% 0 no-repeat;
     background-size: cover;
     font-size: 16px;
     color: #aaa;
