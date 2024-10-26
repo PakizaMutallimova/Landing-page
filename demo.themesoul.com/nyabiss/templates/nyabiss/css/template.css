@@ -744,7 +744,7 @@ body.modal-menu-active {
     padding-bottom: 160px;
 }
 .sp-title {
-    background-image: url("../../../images/background/bg-home-4.jpg") !important;
+    background-image: url("../../../images/articles/article-3.jpg") !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 30%;
@@ -1425,6 +1425,11 @@ body.view-article.remove-container .body-innerwrapper > .sp-main-body > .contain
 .contentpane:not(.com-sppagebuilder) {
     padding: 20px;
 }
+
+.sppb-panel-body .sppb-addon-wrapper .sppb-addon-text-block .sppb-addon-content{
+    color: black;
+}
+
 #sp-bottom {
     padding: 0 0 260px;
     background: #000000 url("../../../images/background/footer.jpg") 60% 0 no-repeat;
