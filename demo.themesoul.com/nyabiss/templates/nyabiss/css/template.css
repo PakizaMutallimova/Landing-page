@@ -394,6 +394,7 @@ ul.social-icons > li:not(:last-child) {
     box-shadow: 0 0 27px 5px rgba(0, 0, 0, 0.09);
     animation: spFadeInDown 0.5s;
 }
+
 #sp-header.header-sticky .logo-image.logo-sticky {
     display: inherit;
     max-height: 55px;

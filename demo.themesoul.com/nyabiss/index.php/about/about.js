@@ -1,15 +1,16 @@
 const data = [
-    { name: "Jessica Laris", image: "https://wfcsradio.com/wp-content/uploads/2019/08/team-member-02.jpg", position: "CEO", description: "lorem ipsum dolar sit epaonb  hbd  hs d jhsb vdv"},
-    { name: "Arthur Conan", image: "https://www.columbuspm.org/wp-content/uploads/2015/09/team-member-sample.jpg", position: "CTO", description: "lorem ipsum dolar sit epaonb  hbd  hs d jhsb vdv"},
-    { name: "Elvis Picon", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5iCMKKj8lTp440PMszx6HZS6JgT8EW2nrzw&s", position: "Software Engineer", description: "lorem ipsum dolar sit epaonb  hbd  hs d jhsb vdv"},
-    { name: "Michael Reon", image: "https://www.shutterstock.com/image-photo/theres-no-substitute-hard-work-260nw-2298253391.jpg", position: "Front End Developer", description: "lorem ipsum dolar sit epaonb  hbd  hs d jhsb vdv"},
-    { name: "Halen Delon", image: "https://wpbeaveraddons.com/wp-content/uploads/2017/06/t1-2.png", position: "Back End Developer", description: "lorem ipsum dolar sit epaonb  hbd  hs d jhsb vdv"},
-    { name: "Luis Styles", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvtblG84CVbfw3_AK82bl2P0ZOrz9sAiORWg&s", position: "Sales Manager", description: "lorem ipsum dolar sit vdv"},
-    { name: "Halen Delon", image: "https://wpbeaveraddons.com/wp-content/uploads/2017/06/t1-2.png", position: "Back End Developer", description: "lorem ipsum dolar sit epaonb  hbd  hs d jhsb vdv"},
-    { name: "Luis Styles", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvtblG84CVbfw3_AK82bl2P0ZOrz9sAiORWg&s", position: "Sales Manager", description: "lorem ipsum dolar sit epos"}
+    { name: "Jessica Laris", image: "https://wfcsradio.com/wp-content/uploads/2019/08/team-member-02.jpg", position: "CEO", description: "She is a CEO at Miloy. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat numquam, placeat fugiat itaque minima quas natus optio dolore, recusandae iure delectus magnam non temporibus eum quos, obcaecati accusamus perferendis vitae"},
+    { name: "Arthur Conan", image: "https://www.columbuspm.org/wp-content/uploads/2015/09/team-member-sample.jpg", position: "CTO", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat numquam, placeat fugiat itaque minima quas natus optio dolore, recusandae iure delectus magnam non temporibus eum quos, obcaecati accusamus perferendis vitae?"},
+    { name: "Elvis Picon", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5iCMKKj8lTp440PMszx6HZS6JgT8EW2nrzw&s", position: "Software Engineer", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat numquam, placeat fugiat itaque minima quas natus optio dolore, recusandae iure delectus magnam non temporibus eum quos, obcaecati accusamus perferendis vitae?"},
+    { name: "Michael Reon", image: "https://www.shutterstock.com/image-photo/theres-no-substitute-hard-work-260nw-2298253391.jpg", position: "Front End Developer", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat numquam, placeat fugiat itaque minima quas natus optio dolore, recusandae iure delectus magnam non temporibus eum quos, obcaecati accusamus perferendis vitae?"},
+    { name: "Halen Delon", image: "https://wpbeaveraddons.com/wp-content/uploads/2017/06/t1-2.png", position: "Back End Developer", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat numquam, placeat fugiat itaque minima quas natus optio dolore, recusandae iure delectus magnam non temporibus eum quos, obcaecati accusamus perferendis vitae?"},
+    { name: "Luis Styles", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvtblG84CVbfw3_AK82bl2P0ZOrz9sAiORWg&s", position: "Sales Manager", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat numquam, placeat fugiat itaque minima quas natus optio dolore, recusandae iure delectus magnam non temporibus eum quos, obcaecati accusamus perferendis vitae?"},
+    { name: "Halen Delon", image: "https://wpbeaveraddons.com/wp-content/uploads/2017/06/t1-2.png", position: "Back End Developer", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat numquam, placeat fugiat itaque minima quas natus optio dolore, recusandae iure delectus magnam non temporibus eum quos, obcaecati accusamus perferendis vitae?"},
+    { name: "Luis Styles", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvtblG84CVbfw3_AK82bl2P0ZOrz9sAiORWg&s", position: "Sales Manager", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat numquam, placeat fugiat itaque minima quas natus optio dolore, recusandae iure delectus magnam non temporibus eum quos, obcaecati accusamus perferendis vitae?"}
 ]
 
 
+// ----------------------- team members ------------------------
 const teamMembers= (data) => {
     const team = data.map((member, index) => {
         return `
@@ -19,7 +20,7 @@ const teamMembers= (data) => {
                     <div class="sppb-addon sppb-addon-feature">
                         <div class="sppb-addon-content">
                             <div class="sppb-media">
-                                <div id="p-${index}" class="entire-card"></div>
+                                <div id="p-${index}" class="entire-card" onclick="popupFunction(${index})"></div>
                                 <div class="pull-sppb-text-center">
                                     <span class="sppb-img-container">
                                         <img
@@ -35,7 +36,7 @@ const teamMembers= (data) => {
                                 <div class="sppb-media-body">
                                     <div class="sppb-media-content">
                                         <h3 class="sppb-addon-title sppb-feature-box-title">${member.name}</h3>
-                                        <div class="sppb-addon-text">${member.position}</div>
+                                        <div  class="sppb-addon-text">${member.position}</div>
                                         <p class="description">${member.description}</p>
                                     </div>
                                 </div>
@@ -49,55 +50,29 @@ const teamMembers= (data) => {
     return team.join('')
 }
 
-const popupContainer = document.querySelector('.popup-container')
-const popupOverlay = document.querySelector('.popupOverlay')
 const members = document.querySelector('.members')
 members.innerHTML = teamMembers(data)
-
-
+// ----------------------- popup team member ------------------------
+const popupContainer = document.querySelector('.popup-container')
+const popupOverlay = document.querySelector('.popupOverlay')
 window.addEventListener('click', (e) => {
-    const card = e.target.closest('.entire-card')
-    const popupImage = document.querySelector('img.popupImage')
-    const popupH2 = document.querySelector('h2')
-    const popupSpeciality = document.querySelector('p')
-    const popupDescr = document.querySelector('span')
-    
-    if (card) {
-        // const image = card.parentElement.children[1].children[0].children[0].src
-        // const nameP = card.parentElement.children[2].children[0].children[0].textContent
-        // const speciality = card.parentElement.children[2].children[0].children[1].textContent
-        // const descr = card.parentElement.children[2].children[0].children[2].textContent
-        // console.log(nameP, speciality, descr);
-        popupOverlay.style.display = 'flex'
-    }
     if (e.target.classList.contains('popupOverlay')) {
         popupOverlay.style.display = 'none'
     }
-    const dataMember = data.map((member, index) => {
-        const id = card.id.split('-')[1]
-        // console.log(id);
-        
-        if (index === id){
-            console.log(member);
-            
-            return`
-                <div class="popupContent d-flex align-items-center row">
-                    <img src="${member.image}" alt="" class="popupImage col-5" />
-                    <div class="col d-flex flex-column justify-content-center">
-                        <h3>${member.name}</h3>
-                        <p>${member.speciality}</p>
-                        <span>${member.description}</span>
-                    </div>
-                </div>`.join('')
-            // popupH2.textContent = member.name
-            // popupSpeciality.textContent = member.position
-            // popupDescr.textContent = member.description
-        }
-    })
-
 })
 
-
-const popupFunstion = (id) => {
-    
+const popupFunction = (id) => {
+    console.log(id);
+    const popupImage = document.querySelector('img.popupImage')
+    const popupH2 = document.querySelector('h2.popupH2');
+    const popupSpeciality = document.querySelector('p.popupSpeciality');
+    const popupDescr = document.querySelector('span.popupDescr');
+    const member = data[id]
+    popupImage.src = member.image
+    popupH2.innerText = member.name
+    popupSpeciality.textContent = member.position
+    popupDescr.textContent = member.description
+    popupOverlay.style.display = 'flex'
 }
+
+// -----------------------  ------------------------
