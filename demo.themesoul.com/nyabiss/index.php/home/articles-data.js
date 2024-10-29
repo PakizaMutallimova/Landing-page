@@ -50,3 +50,28 @@ articlesContainer.innerHTML = articlesData.splice(0, 3).map(article => {
         </div>
     </div>`
 }).join('');
+
+
+const blogAside = document.querySelector('.blog-aside');
+
+blogAside.innerHTML = articlesData.map(article => {
+    const { id, title, image, date } = article;
+    console.log(article);
+    
+    return `
+        <div class="mfp-col-xs-12 mfp-col-sm-6 mfp-col-md-12 mfp_default_item">
+        	<div>
+        		<a href="detail-article-${id}.html" class="mfp_thumb_pos_left"
+        			itemprop="url"><img
+        				src="${image}"
+        				width="90" height="75"
+        				alt="${title}" /></a>
+        		<h4 class="mfp_default_title">
+        			<a href="detail-article-${id}.html" itemprop="url">${title}</a>
+        		</h4>
+        		<span class='mfp_date'>${date}</span>
+        	</div>
+        </div>`
+})
+
+console.log(blogAside);

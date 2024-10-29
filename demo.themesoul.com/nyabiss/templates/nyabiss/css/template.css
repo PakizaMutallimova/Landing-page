@@ -473,7 +473,7 @@ ul.social-icons > li:not(:last-child) {
 .burger-icon > span {
     display: block;
     height: 2px;
-    background-color: #fff;
+    background-color: #000000;
     margin: 5px 0;
     transition: background-color 0.3s ease-in, opacity 0.3s ease-in, transform 0.3s ease-in;
 }
@@ -4108,6 +4108,10 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
     #sp-logo.has-border > .sp-column {
         border-right: none;
         padding-right: 0px;
+    }
+
+    #sp-logo {
+        margin-top: 40px;
     }
     #sp-menu .social-wrap:after,
     #sp-logo.has-border:after {

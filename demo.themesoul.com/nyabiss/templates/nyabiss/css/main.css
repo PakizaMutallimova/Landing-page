@@ -50,7 +50,7 @@ header{
     box-shadow: 0px 0px 0px 0px #ffffff;
 }
 .sp-page-builder .page-content #section-id-zPxEzx_-MMge_nOsv8QR0.sppb-element-loaded {
-    background-image: url(../../images/background/bg-why-choose.jpg);
+    background-image: url(../../../images/background/bg-why-choose.jpg);
     background-position: bottom left;
     display: flex !important;
     align-items: center !important;
@@ -2917,18 +2917,14 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     height: 90%;
 }
 
-
-
 .swiper {
     width: 600px;
     height: 300px;
 }
 
-
 .btn-submit{
     background-color: #87FF8C !important;
 }
-
 
 #sp-footer1 .social-icons li a{
     padding: 10px !important;
