@@ -33,20 +33,29 @@ const articlesData = [
     }
 ];
 
-const articlesContainer = document.querySelector('.articles-container');
 
-articlesContainer.innerHTML = articlesData.splice(0, 3).map(article => {
-    const { id, title, image, date, author } = article;
-    return `
-    <div class="mfp-col-xs-12 mfp-col-sm-6 mfp-col-md-4 mfp_default_item">
-        <div>
-            <a href="../blog/detail-article-${id}.html" class="mfp_thumb_pos_top" itemprop="url">
-                <img src="${image}" class="article-image" width="370" height="150" alt="" />
-            </a>
-            <h4 class="mfp_default_title">
-                <a href="../blog/detail-article-${id}.html" id="${author.split(' ')[0]}" itemprop="url">${title}</a>
-            </h4>
-            <span class="mfp_author">${author}</span> - <span class="mfp_date">${date}</span>
-        </div>
-    </div>`
-}).join('');
+const blogAside = document.querySelector('.blog-aside');
+const mainBlog = document.querySelector('.main-blog');
+
+blogAside.innerHTML = articlesData.map(article => {
+    const { id, title, image, date } = article;
+    if (mainBlog.id != id) {
+        console.log(id, mainBlog.id);
+        
+        return `
+            <div class="blog-card-info mfp-col-xs-12 mfp-col-sm-6 mfp-col-md-12 mfp_default_item">
+                <div>
+                    <a href="../blog/detail-article-${id}.html" class="mfp_thumb_pos_left" itemprop="url">
+                        <img
+                            src="${image}"
+                            width="90" height="75"
+                            alt="${title}" /></a>
+                    <h4 class="mfp_default_title">
+                        <a href="detail-article-${id}.html" itemprop="url">${title}</a>
+                    </h4>
+                    <span class='mfp_date'>${date}</span>
+                </div>
+            </div>`
+    }
+}).join("")
+
