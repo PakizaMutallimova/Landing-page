@@ -2228,7 +2228,7 @@ header{
     background-position: 0 0;
 }
 #column-id-bw7xDLmoOiGv-Xeup2cTj.sppb-element-loaded {
-    background-image: url(../../images/background/bg-tile.png);
+    background-image: url(../../../images/background/bg-why-choose.jpg);
 }
 #column-id-bw7xDLmoOiGv-Xeup2cTj > .sppb-column-overlay {
     mix-blend-mode: normal;
@@ -2928,4 +2928,11 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
 
 #sp-footer1 .social-icons li a{
     padding: 10px !important;
+}
+
+
+.sp-container-title{
+    position: absolute;
+    top: 180px;
+    z-index: 100;
 }
