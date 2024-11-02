@@ -2,6 +2,7 @@
     --main-color: rgba(135,255,140,255);
     --linear-background: linear-gradient(-47deg, #4528DC 0%, #87FF8C 100%);
     --main-green-color: #87ff8c;
+    --shadow-text: rgb(82, 82, 82);
 }
 
 @media (min-width: 1400px) {
