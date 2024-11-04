@@ -12,9 +12,18 @@
 }
 .article-image {
     height: 250px !important;
-    width: auto;
+    width: 100%;
     object-fit: cover;
 }
+
+.sp-megamenu-parent .sp-menu-item.active a{
+    color: var(--main-green-color) !important;
+}
+
+.sp-dropdown-inner .sp-dropdown-items .sp-menu-item a{
+    color: white !important;
+}
+
 .mfp_default_skin_default .mfp_default_item .mfp_thumb_pos_top img{
     width: 100%;
     height: 350PX;
