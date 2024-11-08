@@ -738,6 +738,7 @@ body.modal-menu-active {
 }
 #sp-title {
     min-height: 0;
+    height: 80vh;
 }
 .center-title .sp-page-title {
     text-align: center;
@@ -748,8 +749,9 @@ body.modal-menu-active {
     background-image: url("../../../images/articles/article-3.jpg") !important;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 30%;
+    background-position: 70% 10%;
     text-align: center;
+    /* height: 80vh; */
 }
 .sp-title .breadcrumb {
     font-size: 14px;

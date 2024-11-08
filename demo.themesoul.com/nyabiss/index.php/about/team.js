@@ -1,13 +1,20 @@
 const ourTeam = [
     { name: 'Shahmar Hasanov', position: 'CEO', image: '../../images/team/sahmar.jpg', linkedin: '', description: '' },
-    { name: 'Abdulla Abdullayev', position: 'CTO', image: '../../images/team/abdulla.png', linkedin: '', description: '' },
-    { name: 'Murad Abdullayev', position: 'CPO', image: '../../images/team/murad.png', linkedin: '', description: '' },
-    { name: 'Nasimi Gunduzlu', position: 'Flutter Developer', image: '../../images/team/nasimi.png', linkedin: '', description: '' },
-    { name: 'Shahmar Aghayev', position: 'Mobile Developer', image: '../../images/team/sahmar_dev.png', linkedin: '', description: '' },
-    { name: 'Pakiza Mutallimova', position: 'Frontend Developer', image: '../../images/team/', linkedin: '', description: '' },
-    { name: 'Orkhan Huseynov', position: 'Sales Manager', image: '../../images/team/', linkedin: '', description: '' },
+    { name: 'Abdulla Abdullayev', position: 'CTO', image: '../../images/team/abdulla.png', linkedin: '', description: 'Software Engineer with over 5 years of experience' },
+    { name: 'Murad Abdullayev', position: 'CPO', image: '../../images/team/murad.png', linkedin: '', description: 'Full-stack .NET Developer with over 6 years of experience' },
+    { name: 'Nasimi Gunduzlu', position: 'Flutter Developer', image: '../../images/team/nasimi.png', linkedin: '', description: 'Flutter developer with over 2 years of experience' },
+    { name: 'Shahmar Aghayev', position: 'Mobile Developer', image: '../../images/team/sahmar_dev.png', linkedin: '', description: 'Software Developer with over 3 years of experience' },
+    { name: 'Pakiza Mutallimova', position: 'Frontend Developer', image: '../../images/team/', linkedin: '', description: 'Frontend Developer with 2 years of experience' },
+    { name: 'Orkhan Huseynov', position: 'Sales Manager', image: '../../images/team/', linkedin: '', description: '10 years of experience in the HoReCa segment. More than 5 years of experience in a management position' },
 ]
 
+// try {
+//     let data = JSON.parse(ourTeam);
+//     console.log('data is:', data);
+    
+// } catch (error) {
+//     console.error("Failed to parse JSON:", error);
+// }
 
 // ----------------------- team members ------------------------
 const teamMembers= (data) => {
