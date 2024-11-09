@@ -29,10 +29,9 @@ btnSubmit.addEventListener('click', async () => {
     }
 
     try {
-      const response = await fetch('https://cors-anywhere.herokuapp.com/' + 'https://miloyapp.com/notification/api/v2/Email/Partnership', {
+      const response = await fetch('https://miloyapp.com/notification/api/v2/Email/Partnership', {
         method: 'POST',
         headers: {
-            'Authorization': 'Bearer YOUR_API_KEY_OR_TOKEN',
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),

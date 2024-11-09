@@ -1747,7 +1747,7 @@ body.view-article.remove-container .body-innerwrapper > .sp-main-body > .contain
 .col-lg-4 .article-intro-image img,
 .col-lg-6 .article-intro-image img {
     height: 100%;
-    width: auto;
+    /* width: 100%; */
     position: absolute;
     top: calc(50% + 1px);
     left: calc(50% + 1px);
@@ -1765,6 +1765,18 @@ body.view-article.remove-container .body-innerwrapper > .sp-main-body > .contain
     right: 0;
     bottom: 0;
     padding-bottom: calc(1.13 * 100%);
+}
+
+.article-intro-image .article-intro-image-wrapper img {
+    display: block;
+    width: 70rem;
+    height: 600px;
+    object-fit: cover;
+}
+
+.article-intro-image{
+    display: flex;
+    justify-content: center;
 }
 .article-intro-image.float-left img,
 .article-intro-image.float-right img {

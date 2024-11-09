@@ -5,6 +5,9 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
  */
 
+console.log("main.js file loaded");
+
+var settings = Joomla.getOptions('data') || {};
 // Preloader
 jQuery(window).on('load', function () {
 	if (jQuery('.sp-loader-with-logo').length > 0) {
@@ -31,6 +34,8 @@ function move() {
 		}
 	}
 }
+
+console.log("main.js file loaded 2");
 
 jQuery(function ($) {
 	/**
@@ -86,6 +91,8 @@ jQuery(function ($) {
 		}
 	};
 
+	console.log("main.js file loaded 3");
+	
 	/**
 	 * Calculate the header offset based on the
 	 * backend preview iframe site and real site.
@@ -133,7 +140,8 @@ jQuery(function ($) {
 
 		return headerOffset;
 	}
-
+	console.log("main.js file loaded 4 in function");
+	
 	function handleStickiness() {
 		deviceWiseStickyHeader('sticky-header', getHeaderOffset());
 
@@ -191,11 +199,14 @@ jQuery(function ($) {
 	$('#offcanvas-toggler').on('click', function (event) {
 		event.preventDefault();
 		$('.offcanvas-init').addClass('offcanvas-active');
+		console.log("test1 "+ 'offcanvas-toggler');
 	});
 
 	$('.offcanvas-toggler-secondary').on('click', function (event) {
 		event.preventDefault();
 		$('.offcanvas-init').addClass('offcanvas-active');
+		console.log("test2 "+ 'offcanvas-toggler-secondary');
+		
 	});
 
 	$('.offcanvas-toggler-full').on('click', function (event) {
@@ -360,12 +371,12 @@ jQuery(function ($) {
 			var scrollPercent = (s / (d - c)) * 100;
 			const position = scrollBar.data('position');
 			if (position === 'top') {
-				// var sticky = $('.header-sticky');
-				// if( sticky.length > 0 ){
-				//     sticky.css({ top: scrollBar.height() })
-				// }else{
-				//     sticky.css({ top: 0 })
-				// }
+				var sticky = $('.header-sticky');
+				if( sticky.length > 0 ){
+				    sticky.css({ top: scrollBar.height() })
+				}else{
+				    sticky.css({ top: 0 })
+				}
 			}
 			scrollBar.css({ width: `${scrollPercent}%` });
 		}
