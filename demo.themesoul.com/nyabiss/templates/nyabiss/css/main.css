@@ -2822,9 +2822,8 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
 
 /* --------------------------------------------------------------------------- */
 .background-blur{
-    /* background-color: rgba(6, 22, 13, 0.6) !important; */
-    /* z-index: 1; */
-    background-color: red;
+    background-color: rgba(6, 22, 13, 0.6) !important;
+    z-index: 1;
     height: 100%;
     width: 100%;
 }
@@ -2946,4 +2945,7 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     position: absolute;
     top: 230px;
     z-index: 100;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
 }
