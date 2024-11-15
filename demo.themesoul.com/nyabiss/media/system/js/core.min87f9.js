@@ -123,27 +123,50 @@ const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i,
         }),
             (r.optionsStorage = r.optionsStorage || null),
             (r.getOptions = (t, e) => (r.optionsStorage || r.loadOptions(), r.optionsStorage[t] !== void 0 ? r.optionsStorage[t] : e)),
-            (r.loadOptions = (t) => {
+            
+            
+            
+            r.loadOptions = (t) => {
                 if (!t) {
                     const e = [].slice.call(document.querySelectorAll(".joomla-script-options.new"));
                     let s = 0;
-                    if (
-                        (e.forEach((n) => {
-                            const l = n.text || n.textContent,
-                                i = JSON.parse(l);
-                            i && (r.loadOptions(i), (s += 1)), (n.className = n.className.replace(" new", " loaded"));
-                        }),
-                        s)
-                    )
-                        return;
+            
+                    e.forEach((n) => {
+                        const l = n.text || n.textContent;
+                        if (!l || l.trim() === "") {
+                            console.warn("Empty JSON data found in .joomla-script-options.new element");
+                            return;  // Skip empty JSON strings
+                        }
+            
+                        try {
+                            const i = JSON.parse(l);
+                            if (i) {
+                                r.loadOptions(i);
+                                s += 1;
+                            }
+                            n.className = n.className.replace(" new", " loaded");
+                        } catch (error) {
+                            console.error("Error parsing JSON data:", error);
+                            console.error("Invalid JSON:", l);
+                        }
+                    });
+            
+                    if (s) return;
                 }
-                r.optionsStorage
-                    ? t &&
-                      [].slice.call(Object.keys(t)).forEach((e) => {
-                          t[e] !== null && typeof r.optionsStorage[e] == "object" && typeof t[e] == "object" ? (r.optionsStorage[e] = r.extend(r.optionsStorage[e], t[e])) : (r.optionsStorage[e] = t[e]);
-                      })
-                    : (r.optionsStorage = t || {});
-            }),
+            
+                if (r.optionsStorage) {
+                    t && Object.keys(t).forEach((e) => {
+                        if (t[e] !== null && typeof r.optionsStorage[e] === "object" && typeof t[e] === "object") {
+                            r.optionsStorage[e] = r.extend(r.optionsStorage[e], t[e]);
+                        } else {
+                            r.optionsStorage[e] = t[e];
+                        }
+                    });
+                } else {
+                    r.optionsStorage = t || {};
+                }
+            };
+            
             (r.Text = {
                 strings: {},
                 _: (t, e) => {

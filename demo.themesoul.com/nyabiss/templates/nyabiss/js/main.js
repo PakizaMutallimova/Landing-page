@@ -5,7 +5,6 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
  */
 
-console.log("main.js file loaded");
 
 var settings = Joomla.getOptions('data') || {};
 // Preloader
@@ -35,7 +34,6 @@ function move() {
 	}
 }
 
-console.log("main.js file loaded 2");
 
 jQuery(function ($) {
 	/**
@@ -91,7 +89,6 @@ jQuery(function ($) {
 		}
 	};
 
-	console.log("main.js file loaded 3");
 	
 	/**
 	 * Calculate the header offset based on the
@@ -199,13 +196,11 @@ jQuery(function ($) {
 	$('#offcanvas-toggler').on('click', function (event) {
 		event.preventDefault();
 		$('.offcanvas-init').addClass('offcanvas-active');
-		console.log("test1 "+ 'offcanvas-toggler');
 	});
 
 	$('.offcanvas-toggler-secondary').on('click', function (event) {
 		event.preventDefault();
 		$('.offcanvas-init').addClass('offcanvas-active');
-		console.log("test2 "+ 'offcanvas-toggler-secondary');
 		
 	});
 
