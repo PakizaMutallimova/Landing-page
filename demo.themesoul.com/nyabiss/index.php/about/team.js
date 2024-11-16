@@ -8,14 +8,6 @@ const ourTeam = [
     { name: 'Orkhan Huseynov', position: 'Sales Manager', image: '../../images/team/', linkedin: '', description: '10 years of experience in the HoReCa segment. More than 5 years of experience in a management position' },
 ]
 
-// try {
-//     let data = JSON.parse(ourTeam);
-//     console.log('data is:', data);
-    
-// } catch (error) {
-//     console.error("Failed to parse JSON:", error);
-// }
-
 // ----------------------- team members ------------------------
 const teamMembers= (data) => {
     const team = data.map((member, index) => {
@@ -42,7 +34,7 @@ const teamMembers= (data) => {
                                 <div class="sppb-media-body">
                                     <div class="sppb-media-content">
                                         <h3 class="sppb-addon-title sppb-feature-box-title">${member.name}</h3>
-                                        <div  class="sppb-addon-text">${member.position}</div>
+                                        <div  class="member-position sppb-addon-text">${member.position}</div>
                                         <p class="description">${member.description}</p>
                                     </div>
                                 </div>
