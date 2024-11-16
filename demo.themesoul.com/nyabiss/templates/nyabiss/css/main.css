@@ -1,9 +1,12 @@
 :root {
     --main-color: rgba(135,255,140,255);
     --linear-background: linear-gradient(-47deg, #4528DC 0%, #87FF8C 100%);
-    --main-green-color: #87ff8c;
+    --main-green-color: rgb(9, 94, 9);
+    --hover-green-color: rgb(6, 59, 6);
+    --new-green-color: rgb(6, 59, 6);
     --shadow-text: rgb(82, 82, 82);
 }
+/* #87ff8c */
 
 @media (min-width: 1400px) {
     .sppb-row-container {
@@ -47,7 +50,7 @@ header{
 }
 
 .sp-dropdown-inner{
-    background-color: #87ff8c !important;
+    background-color: var(--main-green-color) !important;
 }
 
 
@@ -1130,7 +1133,7 @@ header{
 }
 #sppb-addon-3MUvWJU9uYOa-MPekjqMm .sppb-addon-title {
     margin-bottom: 20px;
-    color: #87ff8c;
+    color: var(--main-green-color);
 }
 @media (max-width: 1199.98px) {
     #sppb-addon-3MUvWJU9uYOa-MPekjqMm .sppb-addon-title {
@@ -2068,7 +2071,7 @@ header{
     border-radius: 500px;
     background-color: #ffffff;
     padding: 30px;
-    color: #87ff8c;
+    color: var(--main-green-color);
 }
 @media (max-width: 1199.98px) {
     #sppb-addon-_rFQizaq4sB3T27nUeL1N .sppb-modal-selector span {

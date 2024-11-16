@@ -3,7 +3,7 @@
 }
 
 .sp-dropdown-inner{
-    background-color: #87ff8c !important;
+    background-color: var(--main-green-color) !important;
 }
 
 /* .sp-megamenu-parent .sp-menu-item a{
@@ -3287,7 +3287,7 @@ header{
 }
 
 .sp-dropdown-inner{
-    background-color: #87ff8c !important;
+    background-color: var(--main-green-color) !important;
 }
 
 .sp-megamenu-parent .sp-menu-item.active a{
@@ -4379,7 +4379,7 @@ header{
 }
 #sppb-addon-3MUvWJU9uYOa-MPekjqMm .sppb-addon-title {
     margin-bottom: 20px;
-    color: #87ff8c;
+    color: var(--main-green-color);
 }
 @media (max-width: 1199.98px) {
     #sppb-addon-3MUvWJU9uYOa-MPekjqMm .sppb-addon-title {
@@ -5317,7 +5317,7 @@ header{
     border-radius: 500px;
     background-color: #ffffff;
     padding: 30px;
-    color: #87ff8c;
+    color: var(--main-green-color);
 }
 @media (max-width: 1199.98px) {
     #sppb-addon-_rFQizaq4sB3T27nUeL1N .sppb-modal-selector span {
@@ -6150,9 +6150,9 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
 
 .members .member-card{
     height: 350px;
-    border-radius: 20px;
-    background-color: burlywood;
-    box-shadow: var(--main-green-color) 0px 0px 10px;
+    border-radius: 10px;
+    /* background-color: burlywood; */
+    /* box-shadow: var(--main-green-color) 0px 0px 10px; */
     margin: 10px;
     padding: 10px;
     position: relative;
@@ -6171,6 +6171,6 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     height: 250px;
     width: 250px;
     object-fit: cover;
-    border-radius: 20px;
+    /* border-radius: 10px; */
 }
 

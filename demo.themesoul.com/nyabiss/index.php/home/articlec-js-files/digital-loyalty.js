@@ -35,7 +35,7 @@ const articlesData = [
 
 const blogsDigital = document.querySelector('.blogs-digital')
 
-blogsDigital.innerHTML = articlesData.map(article =>{
+blogsDigital.innerHTML = articlesData.slice(0, 3).map(article =>{
     const { title, image, date, id} = article
     return `
     <div class="mfp-col-xs-12 mfp-col-sm-6 mfp-col-md-12 mfp_default_item">

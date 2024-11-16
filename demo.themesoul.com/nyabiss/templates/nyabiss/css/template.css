@@ -3077,7 +3077,7 @@ br[data-mce-bogus="1"] {
     font-weight: bold;
 }
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item.active {
-    background-color: #87ff8c;
+    background-color: var(--main-green-color);
 }
 .sp-megamenu-parent .sp-dropdown .sp-module {
     padding: 0;
@@ -3195,7 +3195,7 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
 /* 
 @media (min-width: 992px) {
     .header-sticky .container-fluid .container-inner .navbar #sp-menu .sp-column .menu-with-offcanvas .sp-megamenu-wrapper .sp-megamenu-parent{
-        background-color: #87ff8c !important;
+        background-color: var(--main-green-color) !important;
         height: 100px !important;
         width: 100px !important;
     }
@@ -3787,7 +3787,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
     z-index: 99999;
 }
 .sp-pre-loader .sp-loader-clock {
-    border: 3px solid #c46b48;
+    border: 3px solid var(--main-green-color);
     border-radius: 60px;
     bottom: 0;
     height: 80px;
@@ -3801,7 +3801,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
 .sp-pre-loader .sp-loader-clock:after {
     content: "";
     position: absolute;
-    background-color: #c46b48;
+    background-color: var(--main-green-color);
     top: 2px;
     left: 48%;
     height: 38px;
@@ -3815,7 +3815,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
 .sp-pre-loader .sp-loader-clock:before {
     content: "";
     position: absolute;
-    background-color: #c46b48;
+    background-color: var(--main-green-color);
     top: 6px;
     left: 48%;
     height: 35px;
@@ -3831,7 +3831,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
     height: 80px;
     width: 80px;
     border-radius: 80px;
-    border: 3px solid fade(#c46b48, 70%);
+    border: 3px solid fade(var(--main-green-color), 70%);
     left: 0;
     top: 0;
     right: 0;
@@ -3850,7 +3850,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
     width: 11px;
     height: 11px;
     border-radius: 10px;
-    background-color: #c46b48;
+    background-color: var(--main-green-color);
 }
 .sp-pre-loader .sp-loader-bubble-loop {
     position: absolute;
@@ -3862,7 +3862,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
     bottom: 0;
     margin: auto;
     border-radius: 12px;
-    background-color: #c46b48;
+    background-color: var(--main-green-color);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     -webkit-animation: loader6 1s ease-in-out infinite;
@@ -3871,7 +3871,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
 .sp-pre-loader .sp-loader-bubble-loop:before {
     content: "";
     position: absolute;
-    background-color: rgba(196, 107, 72, 0.5);
+    background-color: var(--main-green-color);
     top: 0px;
     left: -25px;
     height: 12px;
@@ -3881,7 +3881,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
 .sp-pre-loader .sp-loader-bubble-loop:after {
     content: "";
     position: absolute;
-    background-color: rgba(196, 107, 72, 0.5);
+    background-color: var(--main-green-color);
     top: 0px;
     left: 25px;
     height: 12px;
@@ -3904,7 +3904,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
     content: "";
     display: block;
     border-radius: 50%;
-    border: 2px solid #c46b48;
+    border: 2px solid var(--main-green-color);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -3956,7 +3956,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
     position: absolute;
     width: 2px;
     height: 0;
-    background-color: #c46b48;
+    background-color: var(--main-green-color);
     bottom: 0;
 }
 .sp-pre-loader .wave-two li:nth-child(1) {
@@ -4022,7 +4022,7 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
     width: auto;
 }
 .sp-pre-loader .sp-loader-with-logo .line {
-    background: #c46b48;
+    background: var(--main-green-color);
     height: 5px;
     left: 0;
     position: absolute;
