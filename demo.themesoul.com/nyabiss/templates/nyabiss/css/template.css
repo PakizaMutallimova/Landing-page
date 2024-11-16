@@ -473,7 +473,7 @@ ul.social-icons > li:not(:last-child) {
 .burger-icon > span {
     display: block;
     height: 2px;
-    background-color: #000000;
+    background-color: white;
     margin: 5px 0;
     transition: background-color 0.3s ease-in, opacity 0.3s ease-in, transform 0.3s ease-in;
 }
@@ -3192,6 +3192,15 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
         width: 1320px;
     }
 }
+/* 
+@media (min-width: 992px) {
+    .header-sticky .container-fluid .container-inner .navbar #sp-menu .sp-column .menu-with-offcanvas .sp-megamenu-wrapper .sp-megamenu-parent{
+        background-color: #87ff8c !important;
+        height: 100px !important;
+        width: 100px !important;
+    }
+} */
+
 #offcanvas-toggler {
     display: inline-flex;
     align-items: center;
