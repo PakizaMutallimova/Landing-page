@@ -1,9 +1,10 @@
 :root {
     --main-color: rgba(135,255,140,255);
     --linear-background: linear-gradient(-47deg, #4528DC 0%, #87FF8C 100%);
-    --main-green-color: rgb(9, 94, 9);
+    --main-green-color: #87ff8c;
     --hover-green-color: rgb(6, 59, 6);
     --new-green-color: rgb(6, 59, 6);
+    --dark-green-color: rgb(6, 94, 6);
     --shadow-text: rgb(82, 82, 82);
 }
 /* #87ff8c */
@@ -49,9 +50,13 @@ header{
     color: #0080fe !important;
 }
 
-.sp-dropdown-inner{
-    background-color: var(--main-green-color) !important;
+header .sp-dropdown-inner{
+    background-color: var(--new-green-color) !important;
 }
+/* 
+.offcanvas-menu .sp-dropdown-inner{
+    background-color: black !important;
+} */
 
 
 .sp-page-builder .page-content #section-id-zPxEzx_-MMge_nOsv8QR0 {

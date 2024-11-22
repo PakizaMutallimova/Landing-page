@@ -45,7 +45,7 @@ body.helix-ultimate-preloader:after {
     z-index: 99999;
 }
 a {
-    transition: color 400ms, background-color 400ms;
+    transition: color 300ms, background-color 300ms;
 }
 a,
 a:hover,
@@ -3201,33 +3201,36 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
     }
 } */
 
+
 #offcanvas-toggler {
     display: inline-flex;
     align-items: center;
     height: 85px;
     line-height: 85px;
     font-size: 20px;
+    color: #fff; /* Əlavə edildi */
 }
 #offcanvas-toggler > span:hover {
-    color: #fff;
+    color: #ffae42; /* Dəyişdirildi */
 }
 .offcanvas-init {
     overflow-x: hidden;
     position: relative;
 }
 .offcanvas-active .offcanvas-overlay {
+    margin: 0;
     visibility: visible;
     opacity: 1;
 }
 .offcanvas-overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6); /* Dəyişdirildi */
     bottom: 0;
     left: 0;
     opacity: 0;
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 9999;
+    z-index: 99990;
     visibility: hidden;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -3244,205 +3247,51 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
     position: absolute;
     top: 25px;
     z-index: 1;
-    color: #fff;
+    color: #fff; /* Əlavə edildi */
+    font-size: 24px; /* Əlavə edildi */
 }
 .offcanvas-menu {
     width: 300px;
+    z-index: 99999999;
     height: 100%;
     position: fixed;
-    top: 60px;
-    overflow: inherit;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    z-index: 10000;
-    background-color: #101010;
+    top: 0; /* Dəyişdirildi */
+    background-color: #151515; /* Dəyişdirildi */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); /* Əlavə edildi */
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Əlavə edildi */
 }
-.offcanvas-menu .logo {
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-.offcanvas-menu #offcanvas-toggler {
-    display: none !important;
+.offcanvas-menu .logo img {
+    max-width: 150px; /* Əlavə edildi */
+    margin: 0 auto; /* Əlavə edildi */
 }
 .offcanvas-menu .offcanvas-inner {
-    padding: 40px;
+    padding: 30px; /* Dəyişdirildi */
 }
-.offcanvas-menu .offcanvas-inner .header-modules {
-    margin-left: 0px;
+.offcanvas-menu .offcanvas-inner ul.menu  li{
+    margin-bottom: 15px; /* Əlavə edildi */
 }
-.offcanvas-menu .offcanvas-inner .finder {
-    margin-bottom: 10px;
-}
-.offcanvas-menu .offcanvas-inner .sp-sign-in {
-    position: relative;
-    top: 10px;
-}
-.offcanvas-menu .offcanvas-inner .sp-sign-in .signin-text {
-    display: none !important;
-}
-.offcanvas-menu .offcanvas-inner .sp-profile-wrapper .user-text {
-    display: none !important;
-}
-.offcanvas-menu .offcanvas-inner .sp-contact-info,
-.offcanvas-menu .offcanvas-inner .social-icons {
-    font-size: 14px;
-}
-.offcanvas-menu .offcanvas-inner .sp-contact-info > li > a,
-.offcanvas-menu .offcanvas-inner .social-icons > li > a {
-    opacity: 0.7;
-}
-.offcanvas-menu .offcanvas-inner .sp-contact-info > li > a:hover,
-.offcanvas-menu .offcanvas-inner .sp-contact-info > li > a:focus,
-.offcanvas-menu .offcanvas-inner .social-icons > li > a:hover,
-.offcanvas-menu .offcanvas-inner .social-icons > li > a:focus {
-    opacity: 1;
-}
-.offcanvas-menu .offcanvas-inner .sp-contact-info {
-    margin-top: 20px;
-}
-.offcanvas-menu .offcanvas-inner .sp-contact-info > li:not(:last-child) {
-    margin-bottom: 10px;
-}
-.offcanvas-menu .offcanvas-inner .sp-module {
-    padding: 0;
-    margin: 0;
-}
-.offcanvas-menu .offcanvas-inner .sp-module:not(:last-child) {
-    margin-right: 20px;
-}
-.offcanvas-menu .offcanvas-inner .sp-module .sp-module-title {
-    font-size: 1rem;
-    font-weight: bold;
-}
-.offcanvas-menu .offcanvas-inner .sp-module:not(:last-child) {
-    margin-bottom: 20px;
-}
-.offcanvas-menu .offcanvas-inner .sp-module .awesomplete {
-    width: 210px;
-}
-.offcanvas-menu .offcanvas-inner ul.menu,
-.offcanvas-menu .offcanvas-inner ul.menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    margin: 0 0 15px 0;
-    list-style: none;
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    display: block;
-    font-weight: 600;
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li > a,
-.offcanvas-menu .offcanvas-inner ul.menu > li > span {
-    display: block;
+.offcanvas-menu .offcanvas-inner ul.menu > li > a {
     font-size: 18px;
-    padding: 10px 0px;
-    position: relative;
-    line-height: 18px;
-    opacity: 0.7;
-    transition: 0.3s;
-    color: #fff;
+    padding: 12px 15px; /* Dəyişdirildi */
+    border-radius: 5px; /* Əlavə edildi */
+    /* background: #202020; Əlavə edildi */
+    transition: background 0.3s, opacity 0.3s; /* Əlavə edildi */
+    color: white; /* Əlavə edildi */
 }
-.offcanvas-menu .offcanvas-inner ul.menu > li > a:hover,
-.offcanvas-menu .offcanvas-inner ul.menu > li > span:hover {
-    opacity: 1;
+
+.offcanvas-menu .offcanvas-inner ul.menu > li > a:hover {
+    background: #333; /* Əlavə edildi */
+    opacity: 1; /* Dəyişdirildi */
 }
 .offcanvas-menu .offcanvas-inner ul.menu > li ul.menu-child {
-    display: none;
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent > a > .menu-toggler,
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent > .menu-separator > .menu-toggler {
-    display: block;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent > a > .menu-toggler:after,
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent > .menu-separator > .menu-toggler:after {
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-weight: 900;
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent li.menu-parent > a {
-    position: relative;
-    display: block;
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent li.menu-parent .menu-toggler {
-    right: 0px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent li.menu-parent .menu-toggler:after {
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-weight: 900;
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent li.menu-parent.menu-parent-open .menu-toggler:after {
-    content: "";
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent.menu-parent-open > a > .menu-toggler:after,
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent.menu-parent-open > .menu-separator > .menu-toggler:after {
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-weight: 900;
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent.menu-parent-open > .nav-header > .menu-toggler:after {
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-weight: 900;
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent > .nav-header > .menu-toggler {
-    display: block;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent > .nav-header > .menu-toggler:after {
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-weight: 900;
-}
-.offcanvas-menu .offcanvas-inner ul.menu > li > ul {
-    display: none;
+    margin-left: 15px; /* Dəyişdirildi */
 }
 .offcanvas-menu .offcanvas-inner ul.menu > li > ul li a {
-    font-size: 15px;
-    padding: 4px 0px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #fff;
+    font-size: 16px; /* Dəyişdirildi */
+    color: #ccc; /* Əlavə edildi */
 }
-.offcanvas-menu.border-menu .offcanvas-inner ul.menu > li {
-    border-bottom: 1px solid rgba(32, 31, 31, 0.1);
-    margin-bottom: 0;
-}
-.offcanvas-menu.border-menu .offcanvas-inner ul.menu > li > a {
-    padding: 15px 10px;
-}
-.offcanvas-menu.border-menu .offcanvas-inner ul.menu ul {
-    padding-bottom: 15px;
-}
-.offcanvas-menu.center-alignment .offcanvas-inner {
-    padding: 0px 15px;
+.offcanvas-menu .offcanvas-inner ul.menu > li > ul li a:hover {
+    color: #ffae42; /* Dəyişdirildi */
 }
 body.ltr #offcanvas-toggler.offcanvas-toggler-right {
     float: right;
@@ -3460,6 +3309,7 @@ body.ltr.offcanvs-position-left .offcanvas-menu {
     top: 0;
 }
 body.ltr.offcanvs-position-left.offcanvas-active .offcanvas-menu {
+    margin: 0;
     left: 0;
     top: 0;
 }
@@ -3487,6 +3337,17 @@ body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li.menu-parent > .nav-header
 body.ltr .offcanvas-menu .offcanvas-inner ul.menu > li ul {
     margin-left: 10px;
 }
+body.ltr .offcanvas-menu {
+    border-left: 1px solid rgba(255, 255, 255, 0.1); /* Əlavə edildi */
+}
+
+
+
+
+
+
+
+
 @keyframes spFadeIn {
     from {
         opacity: 0;
