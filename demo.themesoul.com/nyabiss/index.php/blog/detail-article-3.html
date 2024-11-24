@@ -44,8 +44,8 @@
 		.sp-reading-progress-bar {
 			position: fixed;
 			z-index: 9999;
-			height: 40px;
-			background-color: #ebb204;
+			height: 4px;
+			background-color: var(--main-green-color);
 			top: 0;
 		}
 
@@ -68,43 +68,40 @@
 		}
 	</style>
 	<style>
-		.logo-image {
-			height: 80px;
-		}
+        .logo-image {
+            height: 80px;
+        }
 
-		.logo-image-phone {
-			height: 80px;
-		}
-	</style>
-	<style>
-		@media(max-width: 992px) {
-			.logo-image {
-				height: 36px;
-			}
+        .logo-image-phone {
+            height: 80px;
+        }
 
-			.logo-image-phone {
-				height: 36px;
-			}
-		}
-	</style>
-	<style>
-		@media(max-width: 576px) {
-			.logo-image {
-				height: 36px;
-			}
+        @media (max-width: 992px) {
+            .logo-image {
+                height: 65px;
+            }
 
-			.logo-image-phone {
-				height: 36px;
-			}
-		}
-	</style>
-	<style>
-		@media(min-width: 1400px) {
-			.sppb-row-container {
-				max-width: 1320px;
-			}
-		}
-	</style>
+            .logo-image-phone {
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo-image {
+                height: 60px;
+            }
+
+            .logo-image-phone {
+                height: 40px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .sppb-row-container {
+                max-width: 1320px;
+            }
+        }
+    </style>
 	<script src="../home/articlec-js-files/article-1.js" defer></script>
 	<script src="../../media/vendor/jquery/js/jquery.min8a0c.js?3.7.1"></script>
 	<script src="../../media/legacy/js/jquery-noconflict.min1fec.js?504da4"></script>
@@ -1232,37 +1229,30 @@
 		</div>
 		<div class="offcanvas-inner">
 			<div class="d-flex header-modules mb-3"></div>
+
 			<div class="sp-module _menu">
 				<div class="sp-module-content">
 					<ul class="menu nav-pills">
-						<li class="item-101 default menu-deeper menu-parent"><a href="../home/homepage-3.html">Home</a>
+						<li class="item-101 default active menu-deeper menu-parent">
+							<a href="../home/homepage-3.html">Home</a>
 						</li>
 						<li class="item-109 menu-deeper menu-parent">
 							<a href="../about/our-history.html">About Us</a>
-							<div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
-								<div class="sp-dropdown-inner">
-									<ul class="sp-dropdown-items">
-										<li class="sp-menu-item"><a href="../about/our-history.html">Our History</a>
-										</li>
-										<li class="sp-menu-item"><a href="../about/our-team.html">Our Team</a></li>
-									</ul>
-								</div>
-							</div>
+							<ul class="menu-child">
+								<li class="sp-menu-item"><a href="../about/our-history.html">Our History</a></li>
+								<li class="sp-menu-item"><a href="../about/our-team.html">Our Team</a></li>
+							</ul>
 						</li>
-						<li class="item-110 menu-deeper menu-parent">
+						<li class="item-163 menu-deeper menu-parent">
 							<a href="../products/digital-loyalty-card.html">Products</a>
-							<div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
-								<div class="sp-dropdown-inner">
-									<ul class="sp-dropdown-items">
-										<li class="sp-menu-item"><a href="../products/digital-loyalty-card.html">Digital
-												Loyalty Card</a></li>
-										<li class="sp-menu-item"><a href="../products/internal-corporate.html">Internal
-												Corporate Benefits</a></li>
-									</ul>
-								</div>
-							</div>
+							<ul class="menu-child">
+								<li class="sp-menu-item"><a href="../products/digital-loyalty-card.html">Digital Loyalty
+										Card</a></li>
+								<li class="sp-menu-item"><a href="../products/internal-corporate.html">Internal
+										Corporate Benefits</a></li>
+							</ul>
 						</li>
-						<li class="item-163 menu-deeper menu-parent active"><a href="./blog.html">Blog</a></li>
+						<li class="item-163 menu-deeper menu-parent"><a href="./blog.html">Blog</a></li>
 						<li class="item-112 menu-deeper menu-parent"><a href="../contact-us.html">Contact Us</a></li>
 					</ul>
 				</div>

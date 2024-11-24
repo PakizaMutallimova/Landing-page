@@ -6082,6 +6082,7 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     z-index: 10000000;
     padding-top: 50px;
 }
+
 .popupContent {
     overflow: auto;
     background-color: white;
@@ -6094,25 +6095,12 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     position: relative;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-
 .popupContent span{
     font-size: 13px;
     color: #6e6e6e;
 }
 
-.closeButton {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #ff4a56;
-}
-
 .popupImage {
-    /* width: 50%; */
     height: 400px;
     object-fit: top;
     border-radius: 8px;
@@ -6120,17 +6108,114 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     object-fit: cover;
 }
 
-.popupContent h3 {
+.popupContent .popupH2 {
     margin: 10px 0;
     font-size: 1.8rem;
 }
 
-.popupContent p {
+.popupContent .popupSpeciality {
     font-size: 1.2rem;
     width: 100%;
     color: #6e6e6e;
     margin-bottom: 0;
 }
+
+.popupContent div i{
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    display: none;
+    right: 25px;
+    width: 30px;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+/* Responsive Stil */
+
+@media (max-width: 1024px){
+    .popupContent{
+        max-width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+    .popupImage{
+        height: 400px;
+    }
+    .popupContent .popupH2{
+        font-size: 1.5rem;
+    }
+    .popupContent .popupSpeciality{
+        font-size: 1rem;
+    }
+    .popupContent .popupDescr{
+        font-size: 12px;
+    }
+    .closeButton{
+        display: block;
+    }
+}
+
+/* 768px-dən kiçik ekranlar üçün */
+@media (max-width: 768px) {
+    .popupContent {
+        max-width: 90%; /* Popup genişliyini kiçik ekranlarda artır */
+        height: auto; /* Hündürlük məzmununa uyğun tənzimlənir */
+        padding: 15px; /* Padding-i kiçilt */
+    }
+
+    .popupImage {
+        height: 300px; /* Şəkilin hündürlüyü kiçildilir */
+    }
+
+    .popupContent .popupH2 {
+        font-size: 1.5rem; /* Başlıq kiçildilir */
+    }
+
+    .popupContent .popupSpeciality {
+        font-size: 1rem; /* Pozisiya kiçildilir */
+    }
+
+    .popupContent .popupDescr {
+        font-size: 12px; /* Açıklama mətni kiçildilir */
+    }
+    .closeButton{
+        display: block;
+    }
+}
+
+/* 425px-dən kiçik ekranlar üçün */
+@media (max-width: 425px) {
+    .popupContent {
+        max-width: 100%; /* Popup 100% genişliyində olur */
+        padding: 10px; /* Padding daha da kiçilir */
+    }
+
+    .popupImage {
+        height: 250px; /* Şəkilin hündürlüyü daha da kiçilir */
+    }
+
+    .popupContent .popupH2 {
+        font-size: 1.3rem; /* Başlıq daha da kiçilir */
+    }
+
+    .popupContent .popupSpeciality {
+        font-size: 0.9rem; /* Pozisiya daha da kiçilir */
+    }
+
+    .popupContent .popupDescr {
+        font-size: 11px; /* Açıklama mətni daha da kiçilir */
+    }
+}
+
 
 /* ----------------------------- */
 
@@ -6146,13 +6231,18 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5rem;
+    justify-content: center;
+}
+
+.card-m{
+    width: 270px;
 }
 
 .members .member-card{
     height: 350px;
     border-radius: 10px;
-    /* background-color: burlywood; */
-    /* box-shadow: var(--main-green-color) 0px 0px 10px; */
+    width: 250px;
+    min-width: 200px;
     margin: 10px;
     padding: 10px;
     position: relative;
@@ -6171,6 +6261,5 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     height: 250px;
     width: 250px;
     object-fit: cover;
-    /* border-radius: 10px; */
 }
 

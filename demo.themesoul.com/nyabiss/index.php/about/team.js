@@ -12,9 +12,9 @@ const ourTeam = [
 const teamMembers= (data) => {
     const team = data.map((member, index) => {
         return `
-        <div class="card-m col-md-3">
+        <div class="card-m ">
             <div class="member-card  sppb-addon-wrapper addon-root-feature">
-                <div id="sppb-addon-1624875349294" class="clearfix">
+                <div id="sppb-addon-${index}" class="clearfix">
                     <div class="sppb-addon sppb-addon-feature">
                         <div class="sppb-addon-content">
                             <div class="sppb-media">
@@ -54,9 +54,12 @@ members.innerHTML = teamMembers(ourTeam)
 const popupContainer = document.querySelector('.popup-container')
 const popupOverlay = document.querySelector('.popupOverlay')
 window.addEventListener('click', (e) => {
-    if (e.target.classList.contains('popupOverlay')) {
-        popupOverlay.style.display = 'none'
-    }
+    if (e.target.classList.contains('popupOverlay') || e.target.classList.contains('closeButton')) {
+        popupOverlay.style.display = 'none';
+        document.querySelector('body') = 'hidden';
+        console.log(document.querySelector('body') );
+        
+    }    
 })
 
 const popupFunction = (id) => {

@@ -42,3 +42,30 @@
 .pd-container .container-inner .product-main ul li b{
     color: var(--main-green-color);
 }
+
+@media (max-width: 768px) {
+    .custom-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .custom-image {
+        max-width: 80%;
+        margin: 0 auto;display: flex;
+        justify-content: center;
+    }
+
+    .custom-container h2 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-image {
+        max-width: 100%;
+    }
+
+    .custom-container h2 {
+        font-size: 2rem;
+    }
+}

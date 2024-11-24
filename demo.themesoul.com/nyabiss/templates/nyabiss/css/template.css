@@ -3272,45 +3272,45 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
     padding: 30px; /* Dəyişdirildi */
 }
 .offcanvas-menu .offcanvas-inner ul.menu  li{
-    margin: 5px 0; /* Əlavə edildi */
+    margin: 5px 0; 
 }
 .offcanvas-menu .offcanvas-inner ul.menu > li > a {
     font-size: 18px;
-    padding: 5px 15px; /* Dəyişdirildi */
-    border-radius: 5px; /* Əlavə edildi */
-    /* background: #202020; Əlavə edildi */
-    transition: background 0.3s, opacity 0.3s; /* Əlavə edildi */
-    color: white; /* Əlavə edildi */
+    padding: 5px 15px;
+    border-radius: 5px;
+    /* background: #202020; */
+    transition: background 0.3s, opacity 0.3s; 
+    color: white;
 }
 
 .sp-dropdown-inner ul > li > a{
     font-size: 18px;
-    padding: 5px 15px; /* Dəyişdirildi */
-    border-radius: 5px; /* Əlavə edildi */
-    /* background: #202020; Əlavə edildi */
-    transition: background 0.3s, opacity 0.3s; /* Əlavə edildi */
-    color: white; /* Əlavə edildi */
+    padding: 5px 15px;
+    border-radius: 5px;
+    /* background: #202020; */
+    transition: background 0.3s, opacity 0.3s;
+    color: white; 
 }
 
 .offcanvas-menu .offcanvas-inner ul.menu > li > a:hover {
-    background: #333; /* Əlavə edildi */
-    opacity: 1; /* Dəyişdirildi */
+    background: #333; 
+    opacity: 1; 
 }
 
 .sp-dropdown-inner ul > li > a:hover {
-    background: #333; /* Əlavə edildi */
-    opacity: 1; /* Dəyişdirildi */
+    /* background: #333; */
+    opacity: 1;
 }
 
 .offcanvas-menu .offcanvas-inner ul.menu > li ul.menu-child {
-    margin-left: 15px; /* Dəyişdirildi */
+    margin-left: 15px;
 }
 .offcanvas-menu .offcanvas-inner ul.menu > li > ul li a {
-    font-size: 16px; /* Dəyişdirildi */
-    color: #ccc; /* Əlavə edildi */
+    font-size: 16px;
+    color: #ccc; 
 }
 .offcanvas-menu .offcanvas-inner ul.menu > li > ul li a:hover {
-    color: #ffae42; /* Dəyişdirildi */
+    color: var(--main-green-color);
 }
 body.ltr #offcanvas-toggler.offcanvas-toggler-right {
     float: right;
