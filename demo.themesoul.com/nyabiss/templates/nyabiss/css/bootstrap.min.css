@@ -3738,6 +3738,9 @@ fieldset:disabled .btn {
     display: block;
 }
 .navbar {
+    padding-top: 3.5rem;
+}
+.sticky-header .navbar {
     position: relative;
     display: flex;
     flex-wrap: wrap;

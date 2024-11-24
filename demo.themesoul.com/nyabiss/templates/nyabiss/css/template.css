@@ -3192,14 +3192,18 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
         width: 1320px;
     }
 }
-/* 
-@media (min-width: 992px) {
-    .header-sticky .container-fluid .container-inner .navbar #sp-menu .sp-column .menu-with-offcanvas .sp-megamenu-wrapper .sp-megamenu-parent{
-        background-color: var(--main-green-color) !important;
-        height: 100px !important;
-        width: 100px !important;
+
+@media (max-width: 992px) {
+    .header-sticky .container-fluid .container-inner .navbar #sp-logo {
+        margin-top: 0;
     }
-} */
+    .header-sticky .container-fluid .container-inner .navbar #sp-logo .sp-column .offcanvas-toggler-left .burger-icon span {
+        background-color: black;
+    }
+    .header-sticky .container-fluid .container-inner .navbar #sp-logo .sp-column .logo a img{
+        height: 55px;
+    }
+}
 
 
 #offcanvas-toggler {
@@ -3268,11 +3272,20 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
     padding: 30px; /* Dəyişdirildi */
 }
 .offcanvas-menu .offcanvas-inner ul.menu  li{
-    margin-bottom: 15px; /* Əlavə edildi */
+    margin: 5px 0; /* Əlavə edildi */
 }
 .offcanvas-menu .offcanvas-inner ul.menu > li > a {
     font-size: 18px;
-    padding: 12px 15px; /* Dəyişdirildi */
+    padding: 5px 15px; /* Dəyişdirildi */
+    border-radius: 5px; /* Əlavə edildi */
+    /* background: #202020; Əlavə edildi */
+    transition: background 0.3s, opacity 0.3s; /* Əlavə edildi */
+    color: white; /* Əlavə edildi */
+}
+
+.sp-dropdown-inner ul > li > a{
+    font-size: 18px;
+    padding: 5px 15px; /* Dəyişdirildi */
     border-radius: 5px; /* Əlavə edildi */
     /* background: #202020; Əlavə edildi */
     transition: background 0.3s, opacity 0.3s; /* Əlavə edildi */
@@ -3283,6 +3296,12 @@ body.ltr .sp-megamenu-parent .sp-dropdown.sp-dropdown-sub {
     background: #333; /* Əlavə edildi */
     opacity: 1; /* Dəyişdirildi */
 }
+
+.sp-dropdown-inner ul > li > a:hover {
+    background: #333; /* Əlavə edildi */
+    opacity: 1; /* Dəyişdirildi */
+}
+
 .offcanvas-menu .offcanvas-inner ul.menu > li ul.menu-child {
     margin-left: 15px; /* Dəyişdirildi */
 }
@@ -3300,6 +3319,9 @@ body.ltr #offcanvas-toggler.offcanvas-toggler-right {
 body.ltr #offcanvas-toggler.offcanvas-toggler-left {
     float: left;
     margin-right: 20px;
+}
+.offcanvas-toggler-left .burger-icon{
+    z-index: -1;
 }
 body.ltr.offcanvs-position-left .body-wrapper {
     left: 0;
@@ -3994,9 +4016,9 @@ body.ltr .offcanvas-menu {
         padding-right: 0px;
     }
 
-    #sp-logo {
+    /* #sp-logo {
         margin-top: 40px;
-    }
+    } */
     #sp-menu .social-wrap:after,
     #sp-logo.has-border:after {
         display: none;

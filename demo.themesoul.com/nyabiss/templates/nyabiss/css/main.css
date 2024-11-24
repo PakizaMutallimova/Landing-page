@@ -2807,19 +2807,19 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
 
 @media (max-width: 992px) {
     .logo-image {
-        height: 36px;
+        height: 65px;
     }
     .logo-image-phone {
-        height: 36px;
+        height: 50px;
     }
 }
 
 @media (max-width: 576px) {
     .logo-image {
-        height: 36px;
+        height: 60px;
     }
     .logo-image-phone {
-        height: 36px;
+        height: 40px;
     }
 }
 
@@ -2838,7 +2838,7 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
 
 .logo-image-jpg{
     border-radius: 15px;
-    height: 60px !important;
+    height: 50px !important;
 }
 
 .using-container{
@@ -2923,11 +2923,12 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
 
 .video-section{
     width: 100%;
-    height: 100%;
+    height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 60px;
+    z-index: 10000000000;
+    padding: 60px 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
