@@ -30,44 +30,19 @@ btnSubmit.addEventListener('click', async () => {
     }
 
     try {
-      const response = await fetch('https://miloyapp.com/notification/api/v2/Email/Partnership', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        const jsonResponse = await response.json();
-        console.log('Success:', jsonResponse);
-      } else {
-        console.log('Error:', response.statusText);
-      }
+      $.ajax({  
+        url: 'https://miloyapp.com/notification/api/v2/Email/Partnership',  
+        type: 'post',  
+        data: JSON.stringify(data),  
+        contentType: "application/json",  
+        success: function (data) {  
+            console.info(data);  
+        },  
+        error: function (xhr, status, error) {  
+            console.error("Error:", status, error);  
+        }  
+    });
     } catch (error) {
       console.error('Request failed:', error);
     }
 })
-
-// const data = {
-//     "fullname": name.value,
-//     "companyName": company.value,
-//     "email": email.value,
-//     "phone": number.value
-// }
-// // console.log(data);
-// fetch('https://miloyapp.com/notification/api/v2/Email/Partnership', {
-//     method: 'POST',
-//     body: JSON.stringify(data),
-//     // headers: {
-//     //     'Content-type': 'application/json; charset=UTF-8',
-//     // },
-// })
-//     .then(async (response) => console.log(await response.json()))
-//     .then((json) => console.log(json));
-
-// $.post('WorkerRegistration', 
-//     { request: model }, 
-//     function (data) { 
-        
-//     });
