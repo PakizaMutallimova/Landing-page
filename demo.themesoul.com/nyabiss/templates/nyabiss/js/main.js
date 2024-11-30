@@ -137,7 +137,7 @@ jQuery(function ($) {
 
 		return headerOffset;
 	}
-	console.log("main.js file loaded 4 in function");
+	// console.log("main.js file loaded 4 in function");
 	
 	function handleStickiness() {
 		deviceWiseStickyHeader('sticky-header', getHeaderOffset());

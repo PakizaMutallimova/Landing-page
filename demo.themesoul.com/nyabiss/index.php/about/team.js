@@ -1,11 +1,11 @@
 const ourTeam = [
-    { name: 'Shahmar Hasanov', position: 'CEO', image: '../../images/team/sahmar.jpg', linkedin: '', description: '' },
-    { name: 'Abdulla Abdullayev', position: 'CTO', image: '../../images/team/abdulla.png', linkedin: '', description: 'Software Engineer with over 5 years of experience' },
-    { name: 'Murad Abdullayev', position: 'CPO', image: '../../images/team/murad.png', linkedin: '', description: 'Full-stack .NET Developer with over 6 years of experience' },
-    { name: 'Nasimi Gunduzlu', position: 'Flutter Developer', image: '../../images/team/nasimi.png', linkedin: '', description: 'Flutter developer with over 2 years of experience' },
-    { name: 'Shahmar Aghayev', position: 'Mobile Developer', image: '../../images/team/sahmar_dev.png', linkedin: '', description: 'Software Developer with over 3 years of experience' },
-    { name: 'Pakiza Mutallimova', position: 'Frontend Developer', image: '../../images/team/', linkedin: '', description: 'Frontend Developer with 2 years of experience' },
-    { name: 'Orkhan Huseynov', position: 'Sales Manager', image: '../../images/team/', linkedin: '', description: '10 years of experience in the HoReCa segment. More than 5 years of experience in a management position' },
+    { name: 'Shahmar Hasanov', position: 'CEO', image: '../../images/team/sahmar.jpg', linkedin: 'https://www.linkedin.com/in/shahmar-hasanov-019b1112b/', description: '' },
+    { name: 'Abdulla Abdullayev', position: 'CTO', image: '../../images/team/abdulla.png', linkedin: 'https://www.linkedin.com/in/abdulla-abdullayev-13b663192/', description: 'Software Engineer with over 5 years of experience' },
+    { name: 'Murad Abdullayev', position: 'CPO', image: '../../images/team/murad.png', linkedin: 'https://www.linkedin.com/in/murad-abdulla/', description: 'Full-stack .NET Developer with over 6 years of experience' },
+    { name: 'Nasimi Gunduzlu', position: 'Flutter Developer', image: '../../images/team/nasimi.png', linkedin: 'https://www.linkedin.com/in/nasimi-gunduzlu-2a56b5264/', description: 'Flutter developer with over 2 years of experience' },
+    { name: 'Shahmar Aghayev', position: 'Mobile Developer', image: '../../images/team/sahmar_dev.png', linkedin: 'https://www.linkedin.com/in/sahmaragaev/', description: 'Software Developer with over 3 years of experience' },
+    { name: 'Pakiza Mutallimova', position: 'Frontend Developer', image: '../../images/team/pakiza.jpg', linkedin: 'https://www.linkedin.com/in/pakiza-mutallimova-02b737190/', description: 'Frontend Developer with 2 years of experience' },
+    { name: 'Orkhan Huseynov', position: 'Sales Manager', image: '../../images/team/', description: '10 years of experience in the HoReCa segment. More than 5 years of experience in a management position' },
 ]
 
 // ----------------------- team members ------------------------
@@ -63,16 +63,36 @@ window.addEventListener('click', (e) => {
 })
 
 const popupFunction = (id) => {
-    const popupImage = document.querySelector('img.popupImage')
+    const popupImage = document.querySelector('img.popupImage');
     const popupH2 = document.querySelector('h2.popupH2');
     const popupSpeciality = document.querySelector('p.popupSpeciality');
     const popupDescr = document.querySelector('span.popupDescr');
-    const member = ourTeam[id]
-    popupImage.src = member.image
-    popupH2.innerText = member.name
-    popupSpeciality.textContent = member.position
-    popupDescr.textContent = member.description
-    popupOverlay.style.display = 'flex'
+    const popupLinkedin = document.querySelector('a.linkedin-visit');
+
+    const member = ourTeam[id];
+    popupImage.src = member.image;
+    popupH2.innerText = member.name;
+    popupSpeciality.textContent = member.position;
+    popupDescr.textContent = member.description;
+
+    // LinkedIn linkini yoxlayın
+    if (member.linkedin && member.linkedin.trim() !== "") {
+        popupLinkedin.href = member.linkedin;
+        popupLinkedin.target = '_blank'; // Yeni tabda açılma
+        popupLinkedin.style.display = 'inline-flex'; // Görünən hala gətir
+    } else {
+        popupLinkedin.style.display = 'none'; // LinkedIn hesabı yoxdursa gizlədin
+    }
+    
+    popupOverlay.style.display = 'flex';
+};
+
+
+
+const linked = (e) => {
+    e.preventDefault()
+    window.open( )
+    // console.log(e.target.href);
 }
 
 // -----------------------------------------------

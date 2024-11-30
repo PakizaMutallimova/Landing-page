@@ -6125,6 +6125,21 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     margin-top: 30px;
 }
 
+.linkedin-visit {
+    display: inline-flex; /* Varsayılan görünür */
+    color: #0077b5;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.linkedin-visit i {
+    margin-right: 5px;
+}
+.linkedin-visit:hover {
+    text-decoration: underline;
+    color: #005582;
+}
+
 .closeButton {
     position: absolute;
     top: 15px;
@@ -6137,9 +6152,6 @@ body{font-family: 'Poppins', sans-serif;text-decoration: none;text-align: none;}
     color: black;
 }
 
-
-
-/* Responsive Stil */
 
 @media (max-width: 1024px){
     .popupContent{

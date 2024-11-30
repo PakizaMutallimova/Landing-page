@@ -133,6 +133,10 @@ const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i,
             
                     e.forEach((n) => {
                         const l = n.text || n.textContent;
+                        console.log(l);
+                        console.log(e);
+                        
+                        
                         if (!l || l.trim() === "") {
                             console.warn("Empty JSON data found in .joomla-script-options.new element");
                             return;  // Skip empty JSON strings
