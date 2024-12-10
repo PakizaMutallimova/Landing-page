@@ -6,7 +6,13 @@
  */
 
 
-var settings = Joomla.getOptions('data') || {};
+// var settings = Joomla.getOptions('data') || {};
+if (typeof Joomla !== 'undefined' && typeof Joomla.getOptions === 'function') {
+    var settings = Joomla.getOptions('data') || {};
+} else {
+    console.error("Joomla API is not properly loaded.");
+}
+
 // Preloader
 jQuery(window).on('load', function () {
 	if (jQuery('.sp-loader-with-logo').length > 0) {
